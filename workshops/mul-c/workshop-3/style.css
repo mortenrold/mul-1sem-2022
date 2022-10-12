@@ -1,0 +1,16 @@
+.header {
+    background-color: black;
+}
+.graa-kasse, .right {
+    background-color: gray;
+    padding: 15px;
+}
+.main {
+    width: 68%;
+    float: left;
+    
+}
+.right {
+    width: 30%;
+    float: right;
+}
