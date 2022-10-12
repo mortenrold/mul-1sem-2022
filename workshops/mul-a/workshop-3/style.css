@@ -1,0 +1,30 @@
+.header {
+    background-color: black;
+}
+.graa-kasse, .navigation {
+    background-color: lightgrey;
+    padding: 10px;
+    border: 1px solid gray;
+}
+.main {
+    float: left;
+    width: 68%;
+    box-sizing: border-box;
+}
+.navigation {
+    float: right;
+    width: 30%;
+    box-sizing: border-box;
+}
+.footer {
+    background-color: black;
+    clear: both;
+}
+.centreret-link {
+    display: block;
+    text-align: center;
+}
+.navigation ul {
+    list-style: none;
+    padding-left: 10px;
+}
