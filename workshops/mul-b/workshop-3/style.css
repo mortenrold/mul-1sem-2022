@@ -1,0 +1,36 @@
+body {
+    font-family: arial;
+}
+.header, .footer {
+    background-color: black;
+    color: white;
+}
+.indhold {
+    width: 68%;
+    float: left;
+    /* nu forbliver kassens bredde på 70% */
+    box-sizing: border-box;
+}
+.navigation {
+    width: 30%;
+    float: right;
+    box-sizing: border-box;
+}
+.navigation ul {
+    list-style: none;
+    padding: 0;
+}
+.graa-kasse, .navigation {
+    background-color: lightgray;
+}
+.footer {
+    clear: both;
+}
+h2 {
+    margin: 0;
+}
+/* her laver vi vores link om til et 'block-element', hvorefter text-align virker */
+.centreret-link {
+    display: block;
+    text-align: center;
+}
