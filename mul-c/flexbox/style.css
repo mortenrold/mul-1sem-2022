@@ -1,0 +1,51 @@
+/* CSS reset - alting får 0 i margin og padding */
+* {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    background-color: #ccc;
+    padding: 15px;
+    margin: 15px;
+}
+.box {
+    background-color: dodgerblue;
+    margin: 15px;
+    padding: 15px;
+    font-family: helvetica, arial, sans-serif;
+    font-size: 24px;
+    width: 300px;
+}
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.right {
+    justify-content: flex-end;
+}
+.jaevn {
+    justify-content: space-evenly;
+}
+h2 {
+    font-family: helvetica, arial, sans-serif;
+    margin-left: 15px;
+    margin-top: 30px;
+}
+.lodret {
+    height: 400px;
+    align-items: flex-end;
+}
+.lodret-akse {
+    /* skifter perspektiv fra vandret til lodret */
+    flex-direction: column;
+    height: 400px;
+    /* Nu styrer denne pludselig den lodrette fordeling */
+    justify-content: space-between;
+    /*...og denne styrer nu det vandrette */
+    align-items: center;
+}
+.special {
+    background-color: mediumseagreen;
+    /* her flytter vi dette barns placering et step bagud */
+    order: -1;
+}
