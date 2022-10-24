@@ -1,0 +1,49 @@
+/* "CSS reset" - så bliver det ens i alle browsere */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: #ddd;
+    padding: 15px;
+    margin: 15px;
+}
+.flex-container {
+    display: flex;
+    justify-content: flex-end;
+    height: 500px;
+}
+.box {
+    background-color: dodgerblue;
+    width: 300px;
+    padding: 15px;
+    margin: 15px;
+    text-align: center;
+    font-size: 24px;
+    font-family: helvetica, arial, sans-serif; 
+}
+.jaevnt {
+    justify-content: space-evenly;
+    /* hvis der ikke er plads, hopper sidste "barn" ned under */
+    flex-wrap: wrap;
+}
+h2 {
+    font-family: helvetica, arial, sans-serif;
+    margin-top: 30px;
+    margin-left: 15px;
+}
+.lodret {
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+.lodret-akse {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+/* ændre placerng af én børne-div*/
+.special {
+    order: -1;
+    background-color: mediumseagreen;
+}
