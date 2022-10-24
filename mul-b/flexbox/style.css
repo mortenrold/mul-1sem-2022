@@ -1,0 +1,54 @@
+/* CSS reset - så bliver alle afstande nulstillet */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: #ddd;
+    padding: 15px;
+    margin: 15px;
+}
+.flex-container {
+    /* her gør vi forældreren til en "flex-container", så "børnene" begynder at opføre sig flex-agtigt */
+    display: flex;
+    height: 400px;
+}
+.box {
+    background-color: dodgerblue;
+    margin: 15px;
+    padding: 15px;
+    font-size: 24px;
+    font-family: helvetica, arial, sans-serif;
+    width: 300px;
+}
+.right {
+    justify-content: flex-end;
+}
+h2 {
+    font-family: helvetica, arial, sans-serif;
+    margin-left: 15px;
+    margin-top: 30px;
+}
+.jaevn {
+    justify-content: space-evenly;
+    /* børn hopper ned under, hvis der ikke er plads i bredden */
+    flex-wrap: wrap;
+}
+.lodret {
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+.lodret-akse {
+    /* vi ændrer perspektivet fra vandret til lodret */
+    flex-direction: column;
+    /* ...nu styrer denne pludselig den lodrette fordeling */
+    justify-content: space-around;
+    /* ...og denne den vandrette */
+    align-items: center;
+}
+/* vi ændrer placeringen af en enkelt barn med "order" */
+.special {
+    order: -1;
+    background-color: mediumseagreen;
+}
