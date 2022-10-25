@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ddd;
+    padding: 30px;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+nav {
+    width: 400px;
+    display: flex;
+    justify-content: space-evenly; 
+}
+nav a, .logo a {
+    font-family: arial, sans-serif;
+    text-decoration: none;
+    color: rgb(193, 37, 63);
+}
+nav a:hover {
+    text-decoration: underline;
+    color: rgb(241, 59, 89);
+}
+
+
+/* tabs */
+
+.tab-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    border-bottom: 1px solid #999;
+}
+.tabs {
+    width: 460px;
+    display: flex;
+    justify-content: space-between;
+}
+.tabs a {
+    background-image: linear-gradient(#ddd, #ccc);
+    padding: 10px 20px;
+    /* fire værdier - en til hvert hjørne startende fra øverste venstre hjørne */
+    border-radius: 10px 10px 0 0;
+    font-family: arial, sans-serif;
+    color: #333;
+    text-decoration: none;
+    border: 1px solid #999;
+    /* negativ margin flytter linket ud over sin egen grænse */
+    margin-bottom: -1px;
+}
+.tabs .active {
+    background-image: linear-gradient(rgb(237, 237, 237), white);
+    border-bottom: 1px solid white;
+}
