@@ -1,0 +1,62 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ddd;
+    max-width: 1100px;
+    padding: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+nav {
+    display: flex;
+    width: 400px;
+    justify-content: space-around;
+}
+nav a, .logo a {
+    font-family: arial, sans-serif;
+    text-decoration: none;
+    color: rgb(212, 111, 2);
+}
+nav a:hover {
+    text-decoration: underline;
+    color: rgb(240, 140, 34);
+}
+
+
+/* Faneblade / tabs */
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    border-bottom: 1px solid #999;
+}
+.navigation {
+    width: 700px;
+    display: flex;
+    justify-content: space-around;
+}
+.navigation a {
+    background-image: linear-gradient(#ddd, #ccc);
+    padding: 10px 20px;
+    width: 70px;
+    text-align: center;
+    /* fire værdier startende fra øverste venstre hjørne og kører uret rundt */
+    border-radius: 10px 10px 0 0;
+    font-family: arial, sans-serif;
+    color: #333;
+    text-decoration: none;
+    border: 1px solid #999;
+    margin-bottom: -1px;
+}
+.navigation .active {
+    /* vi balnder to farver: lysegrå og hvid */
+    background-image: linear-gradient(#efefef, white);
+    border-bottom: 1px solid white;
+}
